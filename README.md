@@ -1,4 +1,0 @@
-AndroidTest
-===========
-
-my tests
