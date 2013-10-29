@@ -12,7 +12,7 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/Theme.AppCompat.Light" >
+        android:theme="@style/customSuperTema" >
         <activity
             android:name="com.example.firstproject.MainActivity"
             android:label="@string/app_name" >
@@ -24,7 +24,11 @@
         </activity>
         <activity
             android:name="com.example.firstproject.DisplayMessageActivity"
-            android:label="@string/title_activity_display_message" >
+            android:label="@string/title_activity_display_message" 
+            android:parentActivityName="com.example.firstproject.MainActivity">
+            <meta-data 
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.firstproject.MainActivity"/>
         </activity>
     </application>
 
